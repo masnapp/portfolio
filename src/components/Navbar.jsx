@@ -17,10 +17,10 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1a1a1d] text-gray-300'>
-      <div>
+    <div className='fixed w-full h-[50px] flex justify-end items-center px-4 bg-[#1a1a1d] text-gray-300'>
+      {/* <div>
         <img src={Logo} alt='Logo Image' style={{ width: '50px' }} />
-      </div>
+      </div> */}
 
       {/* menu */}
       <ul className='hidden md:flex'>
@@ -52,7 +52,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='justify-end md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='Projects' smooth={true} duration={500}>
+          <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
