@@ -1,5 +1,6 @@
 # Pull the official base image
 FROM node:alpine AS build-stage
+LABEL stage=builder
 
 # Set working direction
 WORKDIR /app
@@ -22,5 +23,5 @@ FROM nginx:alpine
 
 # Copy the react app to nginx html directory 
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
-COPY ./certs /etc/nginx/conf.d
-COPY ./certs/conf/default.conf /etc/nginx/conf.d/
+#COPY ./certs /etc/nginx/conf.d
+#COPY ./certs/conf/default.conf /etc/nginx/conf.d/
