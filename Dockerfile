@@ -23,5 +23,6 @@ FROM nginx:alpine
 
 # Copy the react app to nginx html directory 
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
+EXPOSE $PORT
 #COPY ./certs /etc/nginx/conf.d
 #COPY ./certs/conf/default.conf /etc/nginx/conf.d/
