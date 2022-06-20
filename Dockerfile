@@ -1,6 +1,6 @@
 # Pull the official base image
 FROM node:alpine AS build-stage
-LABEL stage=builder
+#LABEL stage=builder
 
 # Set working direction
 WORKDIR /app
