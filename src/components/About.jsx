@@ -19,9 +19,9 @@ const About = () => {
                 <div>
                     <p> I am passionate about leveraging technology to increase 
                         productivity, solve problems, and create interesting projects. I 
-                        am an IT Support that has a wide breadth of knowledge in system and 
-                        network administration as well as end-user support. I am currently learning 
-                        cloud technologies.
+                        am an IT Support Engineer that has a wide breadth of knowledge in systems and 
+                        network administration. I'm looking to break into the world of cloud technologies and 
+                        am using this as a learning platform. 
 
                     </p>
                 </div>
